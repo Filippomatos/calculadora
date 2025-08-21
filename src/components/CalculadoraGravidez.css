@@ -1,0 +1,144 @@
+.calculator-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.input-section {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.input-help {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+  font-style: italic;
+}
+
+.result-item.highlight {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border: 1px solid #ff69b4;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.2);
+}
+
+.result-item.highlight .result-value {
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+.pregnancy-info {
+  margin-top: 30px;
+}
+
+.pregnancy-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.pregnancy-card h4 {
+  color: #ff69b4;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.info-item {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.info-item strong {
+  color: #ff69b4;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.info-item p {
+  color: #ccc;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+.detail-item.highlight {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border: 1px solid #ff69b4;
+}
+
+.detail-item.highlight span:last-child {
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+/* Estilos específicos para datas */
+.result-value {
+  font-family: 'Courier New', monospace;
+  font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .calculator-content {
+    padding: 15px;
+  }
+  
+  .input-section {
+    padding: 20px;
+  }
+  
+  .pregnancy-card {
+    padding: 20px;
+  }
+  
+  .info-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator-content {
+    padding: 10px;
+  }
+  
+  .input-section {
+    padding: 15px;
+  }
+  
+  .pregnancy-card {
+    padding: 15px;
+  }
+  
+  .pregnancy-card h4 {
+    font-size: 16px;
+  }
+  
+  .info-item {
+    padding: 12px;
+  }
+  
+  .info-item strong {
+    font-size: 13px;
+  }
+  
+  .info-item p {
+    font-size: 12px;
+  }
+}

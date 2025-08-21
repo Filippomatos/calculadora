@@ -1,0 +1,133 @@
+.calculator-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.input-section {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.currency-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 12px;
+  color: #888;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.currency-input .input-field {
+  padding-left: 35px;
+}
+
+.percent-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.percent-symbol {
+  position: absolute;
+  right: 12px;
+  color: #888;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.percent-input .input-field {
+  padding-right: 35px;
+}
+
+.result-item.highlight {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border: 1px solid #00ff88;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+}
+
+.result-item.highlight .result-value {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.savings-info {
+  margin-top: 30px;
+}
+
+.savings-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+}
+
+.savings-card h4 {
+  color: #00ff88;
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.savings-card p {
+  color: #ccc;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.savings-card strong {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.detail-item.highlight {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border: 1px solid #00ff88;
+}
+
+.detail-item.highlight span:last-child {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .calculator-content {
+    padding: 15px;
+  }
+  
+  .input-section {
+    padding: 20px;
+  }
+  
+  .savings-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator-content {
+    padding: 10px;
+  }
+  
+  .input-section {
+    padding: 15px;
+  }
+  
+  .savings-card {
+    padding: 15px;
+  }
+  
+  .savings-card h4 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,150 @@
+.optional {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: normal;
+}
+
+.calc-button.calculate {
+  background: #28a745;
+  border-color: #28a745;
+}
+
+.calc-button.calculate:hover {
+  background: #218838;
+  border-color: #218838;
+  transform: translateY(-1px);
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.result-header h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.result-item {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.result-item:hover {
+  transform: translateY(-1px);
+  border-color: #444;
+}
+
+.result-item.main {
+  background: #007acc;
+  border-color: #007acc;
+  color: white;
+  grid-column: 1 / -1;
+}
+
+.result-item.profit {
+  background: #28a745;
+  border-color: #28a745;
+  color: white;
+}
+
+.result-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.result-value {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.result-item.main .result-value {
+  font-size: 1.5rem;
+}
+
+.result-details {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.result-details h4 {
+  color: #333;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #0f0f0f;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.detail-item span:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.detail-item span:last-child {
+  color: #667eea;
+  font-weight: bold;
+}
+
+.result-error {
+  color: #d32f2f;
+  background: rgba(211, 47, 47, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid rgba(211, 47, 47, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .result-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .result-item.main .result-value {
+    font-size: 1.3rem;
+  }
+  
+  .result-value {
+    font-size: 1.1rem;
+  }
+}

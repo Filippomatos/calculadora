@@ -1,0 +1,147 @@
+.coming-soon {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #ccc;
+}
+
+.coming-soon-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.coming-soon h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.coming-soon p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  color: #999;
+  font-weight: 400;
+}
+
+/* Estilos para select */
+.input-field select {
+  background: #0f0f0f;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.input-field select:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.1);
+  background: #0a0a0a;
+}
+
+.input-field select option {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+/* Tabela de parcelas */
+.parcelas-table {
+  margin-top: 2rem;
+}
+
+.parcelas-table h4 {
+  color: #fff;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table-container {
+  overflow-x: auto;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #0f0f0f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+thead {
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  border-right: 1px solid #333;
+}
+
+th:last-child {
+  border-right: none;
+}
+
+tbody tr {
+  border-bottom: 1px solid #333;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background: rgba(0, 122, 204, 0.1);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 0.5rem;
+  color: #ccc;
+  border-right: 1px solid #333;
+  font-size: 0.75rem;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+.table-note {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 1rem;
+}
+
+/* Responsividade para tabela */
+@media (max-width: 768px) {
+  .table-container {
+    font-size: 0.7rem;
+  }
+  
+  th, td {
+    padding: 0.4rem 0.3rem;
+    font-size: 0.7rem;
+  }
+  
+  .parcelas-table h4 {
+    font-size: 0.8rem;
+  }
+}
