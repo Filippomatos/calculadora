@@ -1,0 +1,8 @@
+{
+  "name": "calculadora-juros",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-08-21",
+  "site": {
+    "bucket": "./dist"
+  }
+}
